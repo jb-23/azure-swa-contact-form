@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang=en>
+<meta charset=utf-8>
+
+<meta name=viewport content="width=device-width">
+
+<title>Contact Form</title>
+
+<link rel=stylesheet type=text/css href=/style.css>
+
+<header>
+  <h1>Contact Form</h1>
+</header>
+
+<main>
+  <form autocomplete=off method=post action=/api/send-message>
+    <label for=name>Your Name</label>
+    <input type=text id=name name=name autocomplete=off>
+
+    <label for=address>Your Email</label>
+    <input type=text id=address name=email autocomplete=off>
+
+    <label for=message>Message</label>
+    <textarea id=message name=message autocomplete=off cols=80 rows=3></textarea>
+
+    <input type=text id=email name=email autocomplete=one-time-code>
+
+    <button>Send</button>
+  </form>
+  <hr>
+</main>
+
+<footer>
+  <a href=https://github.com/jb-23/azure-swa-contact-form>View on GitHub</a>
+</footer>
